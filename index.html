@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
-</head>
-<body>
-<header></header>
-<main></main>
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__left">
+        <ul class="header__menu">
+          <li>
+            <button class="button button__burger">
+              <img src="img/burger.svg" alt="Меню" />
+            </button>
+          </li>
+          <li>
+            <a class="header__logo" href="#"
+              ><img src="img/Group.svg" alt="Логотип"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__right">
+        <ul class="header__communication">
+          <li>
+            <button class="button">
+              <img src="img/call.svg" alt="Заказать звонок" />
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <img src="img/chat.svg" alt="Открыть чат" />
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <img src="img/profile.svg" alt="Профиль" />
+            </button>
+          </li>
+        </ul>
+        <ul class="header__services">
+          <li>
+            <button class="button">
+              <img src="img/repair.svg" alt="Оставить заявку" />
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <img src="img/checkstatus.svg" alt="Статус ремонта" />
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__services">
+        <h1 class="main__title">Услуги и сервисы</h1>
+        <ul class="main__application">
+          <li>Оставить заявку<button class="button main__repair"></button></li>
+          <li>
+            Статус ремонта<button class="button main__checkstatus"></button>
+          </li>
+        </ul>
+      </section>
+      <nav class="main__navigation">
+        <ul class="main__navigation--list">
+          <li class="main__navigation--item">
+            Ремонтируемые бренды
+            <a href="" class="main__navigation--href"></a>
+          </li>
+          <li class="main__navigation--item">
+            Ремонтируемые устройства
+            <a href="" class="main__navigation--href"></a>
+          </li>
+          <li class="main__navigation--item">
+            Цены на услуги
+            <a href="" class="main__navigation--href"></a>
+          </li>
+          <li class="main__navigation--item">
+            Адреса сервисных центров
+            <a href="" class="main__navigation--href"></a>
+          </li>
+          <li class="main__navigation--item">
+            Специальные цены
+            <a href="" class="main__navigation--href"></a>
+          </li>
+          <li class="main__navigation--item">
+            Отзывы
+            <a href="" class="main__navigation--href"></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="main__content">
+        <article class="main__about-us">
+          <p class="main__text-1"></p>
+          <p class="main__text-2"></p>
+          <p class="main__text-3"></p>
+          <button class="main__button">
+            <p class="main__button--text">Читать далее</p>
+          </button>
+        </article>
+        <img
+        src="img/photo_with-logo.jpg"
+        alt="Большое лого"
+        class="main__button--img"
+      />
+      </section>
+    </main>
+  </body>
 </html>
-

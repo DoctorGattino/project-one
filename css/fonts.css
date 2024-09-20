@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'TT Lakes Regular';
+    font-family: 'TT Lakes-Regular';
     src: url('TTLakes-Regular.eot');
     src: local('TT Lakes Regular'), local('TTLakes-Regular'),
         url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'TT Lakes Bold';
+    font-family: 'TT Lakes-Bold';
     src: url('TTLakes-Bold.eot');
     src: local('TT Lakes Bold'), local('TTLakes-Bold'),
         url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-    font-family: 'TT Lakes Medium';
+    font-family: 'TT Lakes-Medium';
     src: url('TTLakes-Medium.eot');
     src: local('TT Lakes Medium'), local('TTLakes-Medium'),
         url('TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
