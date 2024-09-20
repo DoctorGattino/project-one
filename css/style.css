@@ -12,6 +12,10 @@
   text-decoration: none;
 }
 
+body {
+    min-width: 320px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -20,13 +24,12 @@
     display: flex;
     gap: 16px;
     align-items: center;
-    padding: ;
+    padding: 18px 16px;
+    
 }
 
 .header__menu::after {
     content: url(../img/divider.svg);
-    height: 32px;
-    border: 0px #EAEAEA solid;
   }
 
 ul {
@@ -55,45 +58,79 @@ ul {
 .header__services {
     display: flex;
     gap: 16px;
+    align-items: center;
+    padding: 24px 16px;
+    padding-left: 0;
 }
 
 
 .main {
+    background-color: #F8F8F8;
 }
 .main__services {
-}
 
-@font-face {
-    font-family: 'TT Lakes-Bold';
-    src: url('TTLakes-Bold.eot');
-    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-        url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-        url('TTLakes-Bold.woff') format('woff'),
-        url('TTLakes-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
 }
 
 .main__title {
     font-family: 'TT Lakes-Bold', sans-serif;
     font-size: 28px;
     line-height: 40px;
+    display: flex;
+    letter-spacing: -0.6px;
+    padding: 24px 16px 0 0;
+    color: #1B1C21;
 
 }
+
+.main__title::before {
+    content: url(/img/highlight.svg);
+    padding-right: 12px;
+}
+
 .main__application {
+    display: none;
 }
 .main__repair {
 }
 .main__checkstatus {
 }
+
+
 .main__navigation {
+
 }
 .main__navigation--list {
+    overflow-x: scroll;
+    display: flex;
+    white-space: nowrap;
 }
+
 .main__navigation--item {
+    height: 40px;
+  border: 2px solid transparent;
+
 }
+
+.main__navigation--item:first-child {
+    border-radius: 6px;
+    border-color: #B8FFEC;
+    background-color:#ffffff;
+}
+
 .main__navigation--href {
+    padding: 8px 16.67px 8px 16.67px;
+    font-family: "TT Lakes-Medium", sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    display: inline-block;
+    color: #7E7E82;
 }
+
+p {
+    color: #1B1C21;
+}
+
 .main__content {
 }
 .main__about-us {
@@ -105,8 +142,14 @@ ul {
 .main__text-3 {
 }
 .main__button {
+    display: flex;
 }
 .main__button--img {
 }
 .main__button--text {
+    color: #1B1C21;
+    font-family: "TT Lakes-Medium", sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
 }
