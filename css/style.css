@@ -103,13 +103,12 @@ ul {
 }
 
 .button:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .main__button:hover {
-
-    color: #1B1C21;
-	text-decoration: underline;
+  color: #1b1c21;
+  text-decoration: underline;
 }
 
 .main__navigation--href {
