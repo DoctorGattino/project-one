@@ -67,7 +67,7 @@ ul {
 }
 
 .main__title::before {
-  content: url(img/highlight.svg);
+  content: url(/img/highlight.svg);
   padding-right: 12px;
 }
 
