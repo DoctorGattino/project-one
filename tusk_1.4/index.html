@@ -3,8 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+      <header class="header">
+        <nav class="header__navigation">
+          <ul class="header__menu">
+            <li><button class="button header__button">
+                <img src="img/burger.svg" alt="Закрыть">
+            </button></li>
+            <li><a class="header__logo" href="#">
+                <img src="img/Group.svg" alt="Логотип">
+            </a></li>
+            <li><button class="button button__search header__button">
+                <img src="img/search.svg" alt="Поиск">
+            </button></li>
+          </ul>
+        </nav>
+      </header>
+<main class="main">
+ <nav class="main-navigation">
+    <ul class="main-navigation__list">
+        <li class="main__navigation--item"><a class="main__navigation--href active" href="#">Ремонт техники</a></li>
+        <li class="main__navigation--item"><a class="main__navigation--href" href="#">Услуги и сервисы</a></li>
+        <li class="main__navigation--item"><a class="main__navigation--href" href="#">Корпоративным клиентам</a></li>
+        <li class="main__navigation--item"><a class="main__navigation--href" href="#">Продавцам техники</a></li>
+        <li class="main__navigation--item"><a class="main__navigation--href" href="#">Партнерам</a></li>
+        <li class="main__navigation--item"><a class="main__navigation--href" href="#">Производителям</a></li>
+        <li class="main__navigation--item"><a class="main__navigation--href" href="#">Наши сервисные центры</a></li>
+        <li class="main__navigation--item"><a class="main__navigation--href" href="#">Контакты</a></li>
+    </ul>
+ </nav>
+ <div class="main__bottom">
+     <nav class="feedback-navigation">
+         <ul class="feedback-navigation__list">
+             <li><button class="button feedback-navigation__button"><img src="img/chat copy.svg" alt="Заказать звонок"></button></li>
+             <li><button class="button feedback-navigation__button"><img src="img/chat.svg" alt="Начать чат"></button></li>
+             <li><button class="button feedback-navigation__button"><img src="img/profile.svg" alt="Профиль"></button></li>
+         </ul>
+     </nav>
+     <section class="contact-information">
+        <p class="contact-information__email">mail@cps.com</p>
+        <p class="contact-information__number">8 800 890 8900</p>
+    </section>
+    <ul class="language">
+        <li class="language__item"><button class="language__button current">RU</button></li>
+        <li class="language__item"><button class="language__button">EN</button></li>
+        <li class="language__item"><button class="language__button">CH</button></li>
+    </ul>
+</div>
+</main>
+
+  </body>
 </html>
