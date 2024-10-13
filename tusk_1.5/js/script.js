@@ -9,6 +9,7 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
     },
     slidesPerView: "auto",
+    spaceBetween: 10,
   });
 });
 
