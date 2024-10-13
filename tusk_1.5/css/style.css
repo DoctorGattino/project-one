@@ -37,26 +37,36 @@
 
 }
 
+.swiper {
+
+
+}
+
+.swiper-slide {
+    max-width: 240px;
+    display: block;
+}
+
 .brands-list {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 240px);
     grid-template-rows: repeat(4, auto);
+    gap: 0 16px;
     margin-left: 16px;
 }
+
 .brands-list__item {
     display: grid;
-    grid-template-columns: 2;
     margin-right: 16px;
     background-color: #fff;
     border: 1px solid #EAEAEA;
     border-radius: 8px;
     margin-top: 16px;
+    width: 240px;
 }
 
 
 
-.brands-list__swiper-slide {
-}
 .brands-list__button {
     display: flex;
     height: 72px;
