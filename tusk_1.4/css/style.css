@@ -178,15 +178,15 @@ body {
 }
 
 @media (max-height: 770px) {
-    body {
-        max-width: 320px;
-        height: auto;
-        box-shadow: 10px -50px 130px -80px black;
-        overflow-x: hidden;
-        overflow-y: auto;
-      }
-      .main__bottom {
-        position: static;
-        bottom: 0;
-      }
+  body {
+    max-width: 320px;
+    height: auto;
+    box-shadow: 10px -50px 130px -80px black;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .main__bottom {
+    position: static;
+    bottom: 0;
+  }
 }
