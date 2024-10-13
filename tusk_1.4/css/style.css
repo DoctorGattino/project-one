@@ -77,8 +77,7 @@ body {
 .main-navigation {
   margin-top: 50px;
 }
-.main-navigation__list {
-}
+
 .main__navigation--item {
   margin-bottom: 20px;
 }
@@ -130,17 +129,12 @@ body {
   position: sticky;
   bottom: 0;
 }
-.feedback-navigation {
-}
+
 .feedback-navigation__list {
   display: flex;
   gap: 16px;
 }
 
-.feedback-navigation__button {
-}
-.contact-information {
-}
 .contact-information__email {
   font-family: "TT Lakes-medium", "sans-serif";
   margin-top: 16px;
