@@ -1,3 +1,4 @@
+if (window.matchMedia('(max-width: 767px)').matches) {
 document.addEventListener("DOMContentLoaded", function() {
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -12,15 +13,6 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 16,
   });
 });
+}
 
 
-/* 	document.addEventListener("DOMContentLoaded", function(){
-  var swiper = new Swiper('.swiper-container', {
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-		slidesPerView: 1.2,
-  });
-}); */
