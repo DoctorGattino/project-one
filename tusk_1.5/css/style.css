@@ -12,281 +12,257 @@
   text-decoration: none;
 }
 
-
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 .header {
-    background-image: linear-gradient(to right, #F8F8F8 0%,  #FFFFFF );
-    height: 80px;
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid #D9FFF5;
+  background-image: linear-gradient(to right, #f8f8f8 0%, #ffffff);
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #d9fff5;
 }
 .header__title {
-    font-family: 'TT Lakes-Regular', "sans-serif";
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #7E7E82;
-    font-weight: normal;
-    text-align: left;
-    padding: 16px;
+  font-family: "TT Lakes-Regular", "sans-serif";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  font-weight: normal;
+  text-align: left;
+  padding: 16px;
 }
 
 .main {
-    background-color: #F8F8F8;
-	width: 100%;
-	height: 100%;
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
 }
-
-
 
 /* градиент для свайпера */
 body::after {
-    content: "";
-    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-    position: absolute;
-    right: 0px;
-    top: 75px;
-    height: 81px;
-    width: 24px;
-    z-index: 2;
+  content: "";
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+  position: absolute;
+  right: 0px;
+  top: 75px;
+  height: 81px;
+  width: 24px;
+  z-index: 2;
 }
 
-
-
 .swiper-slide {
-    max-width: 240px;
-    display: block;
+  max-width: 240px;
+  display: block;
 }
 
 .brands-list {
-
-    gap: 0 16px;
-    margin-left: 16px;
-    height: 100%;
-    width: 100%;
+  gap: 0 16px;
+  margin-left: 16px;
+  height: 100%;
+  width: 100%;
 }
 
 .brands-list__item {
-    display: grid;
-    margin-right: 16px;
-    background-color: #fff;
-    border-radius: 8px;
-    margin-top: 16px;
+  display: grid;
+  margin-right: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 16px;
 }
 
-
-
 .brands-list__button {
-    display: flex;
-    height: 72px;
-    width: 240px;
-    background-color: transparent;
-    position: relative;
-    border: 2px solid #EAEAEA;
-    border-radius: 8px;
+  display: flex;
+  height: 72px;
+  width: 240px;
+  background-color: transparent;
+  position: relative;
+  border: 2px solid #eaeaea;
+  border-radius: 8px;
 }
 
 .brands-list__button::after {
-
-    content: "";
-    background-image: url(../img/go.svg);
-    background-repeat: no-repeat;
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 16px;
-    top: 16px;
+  content: "";
+  background-image: url(../img/go.svg);
+  background-repeat: no-repeat;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
 }
 
 /* стили при наведении */
 
 .brands-list__button:hover {
-    transition: transform 0.5s;
-    transform: scale(1.03);
-    border-color: #b8ffec;
-    border-radius: 6px;
+  transition: transform 0.5s;
+  transform: scale(1.03);
+  border-color: #b8ffec;
+  border-radius: 6px;
 }
 
 .brands-list__image {
-    padding-left: 16px;
-    align-self: center;
-    display: inline-block;
-    
-
+  padding-left: 16px;
+  align-self: center;
+  display: inline-block;
 }
 
 .main__buttons {
-    display: none;
+  display: none;
 }
 
 .button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* стили для пагинации */
 
 .swiper-pagination {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-                
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgb(129, 129, 129);
-    margin: 0 12px;
-    cursor: pointer;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgb(129, 129, 129);
+  margin: 0 12px;
+  cursor: pointer;
 }
 
 .swiper-pagination-bullet-active {
-    background: rgba(181, 182, 188, 1);
-} 
-
+  background: rgba(181, 182, 188, 1);
+}
 
 @media (min-width: 369px) {
-
-    .header {
-        height: 56px;
-    }
-    .brands-list__item {
-        margin-top: 24px;
-    }
-    
+  .header {
+    height: 56px;
+  }
+  .brands-list__item {
+    margin-top: 24px;
+  }
 }
 
 @media (max-height: 480px) {
-    body {
-        overflow: auto;
-    }
+  body {
+    overflow: auto;
+  }
 }
 
 @media (min-width: 768px) {
+  .header__title {
+    padding: 16px 24px;
+  }
 
+  /*     высота грид контейнера */
+  .brands {
+    height: 190px;
+  }
 
+  .brands-list {
+    display: grid !important;
+    grid-template-columns: repeat(3, 224px);
+    grid-template-rows: repeat(4, 72px);
+    gap: 16px 24px;
+    margin-left: 24px;
+  }
 
+  .brands-list__button {
+    width: 224px;
+  }
 
-    .header__title {
-        padding: 16px 24px;
-    }
+  .main__buttons {
+    display: block;
 
-/*     высота грид контейнера */
-    .brands {
-        height: 190px;
+    margin-top: 6px;
+  }
 
-    }
+  .content-buttons {
+    background-color: transparent;
+    position: relative;
+    display: block;
+    margin-left: 24px;
+    padding-left: 33px;
+    font-family: "TT Lakes-Regular", "sans-serif";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+  }
 
-    .brands-list {
-        display: grid !important;
-        grid-template-columns: repeat(3, 224px) ;
-        grid-template-rows: repeat(4, 72px) ;
-        gap: 16px 24px;
-        margin-left: 24px;
-    }
+  .content-buttons:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
 
-    
+  .main__buttons--show-all {
+    top: 15px;
+  }
 
+  .main__buttons--show-all::before {
+    content: "";
+    background-image: url(../img/expand-down.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: 1px;
+    bottom: 0px;
+  }
 
-    .brands-list__button {
-        width: 224px;
-    }
-
-    .main__buttons {
-        display: block;
-
-        margin-top: 6px;
-    }
-
-    .content-buttons {
-        background-color: transparent;
-        position: relative;
-        display: block;
-        margin-left: 24px;
-        padding-left: 33px;
-        font-family: 'TT Lakes-Regular', "sans-serif";;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        font-weight: 500;
-        
-        
-    }
-
-    .content-buttons:hover {
-        transform: scale(1.1);
-        transition: transform 0.2s;
-    }
-
-    .main__buttons--show-all {
-        top: 15px;
-    }
-
-    .main__buttons--show-all::before {
-        content: "";
-        background-image: url(../img/expand-down.svg);
-        background-repeat: no-repeat;
-        width: 24px;
-        height: 24px;
-        display: block;
-        position: absolute;
-        left: 1px;
-        bottom: 0px;
-    }
-
-
-    .main__buttons--hidden::before {
-        content: "";
-        background-image: url(../img/expand-up.svg);
-        background-repeat: no-repeat;
-        width: 24px;
-        height: 24px;
-        display: block;
-        position: absolute;
-        left: 1px;
-        bottom: 0px;
-    }
-    
+  .main__buttons--hidden::before {
+    content: "";
+    background-image: url(../img/expand-up.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: 1px;
+    bottom: 0px;
+  }
 }
 
 @media (min-width: 1120px) {
-    
-    .header__title {
-        padding: 16px 32px;
-    }
-    
-    .brands-list {
-        display: grid !important;
-        grid-template-columns: repeat(4, 240px) ;
-        grid-template-rows: repeat(3, 72px) ;
-        gap: 16px 32px;
-        margin-left: 32px;
-    }
+  .header__title {
+    padding: 16px 32px;
+  }
 
-    .brands-list__button {
-        width: 240px;
-    }
+  .brands-list {
+    display: grid !important;
+    grid-template-columns: repeat(4, 240px);
+    grid-template-rows: repeat(3, 72px);
+    gap: 16px 32px;
+    margin-left: 32px;
+  }
 
-    .main__buttons--hidden {
-        bottom: 80px;
-        z-index: 2;
-    }
+  .brands-list__button {
+    width: 240px;
+  }
 
-    .content-buttons {
-        margin-left: 31px;
-    }
+  .main__buttons--hidden {
+    bottom: 80px;
+    z-index: 2;
+  }
+
+  .content-buttons {
+    margin-left: 31px;
+  }
 }
