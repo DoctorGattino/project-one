@@ -152,8 +152,10 @@ body::after {
         padding: 16px 24px;
     }
 
+/*     высота грид контейнера */
     .brands {
-        height: 40%;
+        height: 190px;
+
     }
 
     .brands-list {
@@ -175,6 +177,8 @@ body::after {
 
     .main__buttons {
         display: block;
+
+        margin-top: 6px;
     }
 
     .content-buttons {
@@ -188,10 +192,12 @@ body::after {
         line-height: 24px;
         letter-spacing: -0.2px;
         font-weight: 500;
+        
+        
     }
 
     .main__buttons--show-all {
-        margin-top: 6px;
+        
     }
 
     .main__buttons--show-all::before {
