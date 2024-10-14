@@ -3,14 +3,21 @@ document.addEventListener("DOMContentLoaded", function() {
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-  
+      slidesPerView: "auto",
+    spaceBetween: 1,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-    slidesPerView: "auto",
-    spaceBetween: 1,
+    breakpoints: {
+        769: {
+            toggle: false,
+            loop: false,
+            spaceBetween: 'auto',
+            centeredSlides: false
+        }
+    }
   });
 });
 }
