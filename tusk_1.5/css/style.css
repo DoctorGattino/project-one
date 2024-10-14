@@ -127,6 +127,10 @@ body::after {
     display: none;
 }
 
+.button {
+    cursor: pointer;
+}
+
 @media (min-width: 369px) {
 
     .header {
