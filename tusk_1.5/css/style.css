@@ -12,6 +12,7 @@
   text-decoration: none;
 }
 
+
 html {
     height: 100%;
 }
@@ -73,9 +74,6 @@ body::after {
 }
 
 .brands-list {
-    display: grid;
-    grid-template-columns: repeat(3, 240px);
-    grid-template-rows: repeat(4, auto);
     gap: 0 16px;
     margin-left: 16px;
     height: 100%;
@@ -130,6 +128,33 @@ body::after {
 .button {
     cursor: pointer;
 }
+
+/* стили для пагинации */
+
+.swiper-pagination {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+                
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgb(129, 129, 129);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgba(181, 182, 188, 1);
+} 
+
 
 @media (min-width: 369px) {
 
