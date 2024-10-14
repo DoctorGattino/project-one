@@ -10,9 +10,7 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
     },
     slidesPerView: "auto",
-    spaceBetween: 16,
+    spaceBetween: 1,
   });
 });
 }
-
-

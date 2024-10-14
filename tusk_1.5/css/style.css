@@ -43,12 +43,21 @@ body {
     background-color: #F8F8F8;
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 }
 
 
 .brands {
-
+    
+}
+body::after {
+    content: "";
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    height: 81px;
+    width: 24px;
+    z-index: 2;
 }
 
 .swiper {
@@ -57,7 +66,7 @@ body {
 }
 
 .swiper-slide {
-    width: auto !important;
+    max-width: 240px;
     display: block;
 }
 
@@ -112,3 +121,94 @@ body {
 
 }
 
+@media (min-width: 369px) {
+
+    .header {
+        height: 56px;
+    }
+    .brands-list__item {
+        margin-top: 24px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination {
+        display: none;
+    }
+
+
+    .header__title {
+        padding: 16px 24px;
+    }
+
+    .brands {
+        height: 40%;
+    }
+
+    .brands-list {
+        display: grid !important;
+        grid-template-columns: repeat(3, 224px) ;
+        grid-template-rows: repeat(4, 72px) ;
+        gap: 16px 24px;
+        margin-left: 24px;
+    }
+
+    
+    .brands-list__item {
+        
+    }
+
+    .brands-list__button {
+        width: 224px;
+    }
+
+    .main__buttons {
+        
+    }
+
+    .content-buttons {
+        background-color: transparent;
+        position: relative;
+        display: block;
+        margin-left: 24px;
+        padding-left: 33px;
+        font-family: 'TT Lakes-Regular', "sans-serif";;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+    }
+
+    .main__buttons--show-all {
+        margin-top: 6px;
+    }
+
+    .main__buttons--show-all::before {
+        content: "";
+        background-image: url(../img/expand-down.svg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        display: block;
+        position: absolute;
+        left: 1px;
+        bottom: 0px;
+    }
+
+    .main__buttons--hidden {
+        
+    }
+
+    .main__buttons--hidden::before {
+        content: "";
+        background: url(../img/expand-up.svg);
+        width: 24px;
+        height: 24px;
+        margin-left: 24px;
+        display: block;
+        position: absolute;
+        right: 10px;
+    }
+    
+}
