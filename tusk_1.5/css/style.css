@@ -49,12 +49,14 @@ body {
 .brands {
     
 }
+
+/* градиент для свайпера */
 body::after {
     content: "";
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 75px;
     height: 81px;
     width: 24px;
     z-index: 2;
